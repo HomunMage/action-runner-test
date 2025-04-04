@@ -15,6 +15,10 @@ jobs:
       - name: test
         run: |
           mkdir ooo
+          echo "test ls ."
+          ls .
+          echo "test ls ~"
+          ls ~
           docker ps -a
           echo "test docker ps -a"
 
