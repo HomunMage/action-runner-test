@@ -13,7 +13,9 @@ jobs:
         uses: actions/checkout@v3
 
       - name: test
-        run: mkdir ooo
+        run: |
+          mkdir ooo
+          docker ps -a
 
       - name: Run a simple command
         run: |
